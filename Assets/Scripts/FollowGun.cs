@@ -9,6 +9,6 @@ public class FollowGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Gun.position + offset;
+        transform.position = new Vector3(0, Gun.position.y, 0) + offset;
     }
 }
