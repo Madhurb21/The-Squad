@@ -16,11 +16,11 @@ public class GunRot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.A))
+        if(Input.GetKey(KeyCode.Z))
         {
             gunTransform.Rotate(rotationSpeed * rotationVector * Time.deltaTime);
         }
-        else if(Input.GetKey(KeyCode.D))
+        else if(Input.GetKey(KeyCode.C))
         {
             gunTransform.Rotate(rotationSpeed * (-rotationVector) * Time.deltaTime);
         }
