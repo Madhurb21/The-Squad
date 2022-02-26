@@ -17,19 +17,20 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)){
             TakeDamage(damageToCar);
         }
-    }
+    }*/
 
-    void OnCollisionEnter(Collision other){
+    void OnTriggerEnter2D(Collider2D other){
         //Debug.Log("Hit");
         //TakeDamage(damag);
-            if(other.collider.tag == "Zombie"){
+            if(other.gameObject.tag == "Zombie"){
                 //Debug.Log("Hit");
                 TakeDamage(damageToCar);
+                Destroy(other.gameObject);
             }
     }
 
