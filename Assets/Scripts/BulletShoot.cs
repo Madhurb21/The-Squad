@@ -20,14 +20,7 @@ public class BulletShoot : MonoBehaviour
         {
             Shoot();
             timePassed = 0;
-        }
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
             playSound();
-        }
-        if(Input.GetKeyUp(KeyCode.Space))
-        {
-            Invoke("pauseSound", 0.1f);
         }
     }
 
@@ -38,10 +31,6 @@ public class BulletShoot : MonoBehaviour
     private void playSound()
     {
         bulletSound.Play();
-    }
-    private void pauseSound()
-    {
-        bulletSound.Pause();
     }
 }
 

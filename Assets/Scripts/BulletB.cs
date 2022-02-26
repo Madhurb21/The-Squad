@@ -32,11 +32,7 @@ public class BulletB : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.gameObject.tag == "boundary")
-        {
-            Destroy(this.gameObject);
-        }
-        if(other.gameObject.tag == "zombie")
+        if(other.gameObject.tag == "Zombie")
         {
             Destroy(this.gameObject);
         }
