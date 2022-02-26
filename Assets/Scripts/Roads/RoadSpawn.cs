@@ -20,4 +20,5 @@ public class RoadSpawn : MonoBehaviour
         GameObject temp = Instantiate(road, nextSpawnPoint, Quaternion.identity);
         nextSpawnPoint = temp.transform.GetChild(1).position;
     }
+   
 }

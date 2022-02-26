@@ -177,7 +177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 5
-  sideSpeed: 5
 --- !u!212 &136440119
 SpriteRenderer:
   m_ObjectHideFlags: 0

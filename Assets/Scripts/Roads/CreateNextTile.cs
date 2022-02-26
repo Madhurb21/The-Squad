@@ -9,6 +9,7 @@ public class CreateNextTile : MonoBehaviour
     void Start()
     {
         roadSpawn = FindObjectOfType<RoadSpawn>();
+        SpawnObstacle();
     }
 
     // Update is called once per frame
@@ -24,4 +25,14 @@ public class CreateNextTile : MonoBehaviour
             Destroy(this.gameObject, 3f);
         }
     }
+    public GameObject obstaclePrefab;
+
+    void SpawnObstacle ()
+    {
+        int obstacleSpawnIndex = Random.Range(2, 5);
+        Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
+
+        Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+    }
+
 }
