@@ -18,6 +18,6 @@ public class gameWonScene : MonoBehaviour
     }
     public void loadMainScene()
     {
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("CreditsScreen");
     }
 }
