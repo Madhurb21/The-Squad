@@ -173,7 +173,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136440116}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c24bde7eef335eb4db9e8e641094a224, type: 3}
   m_Name: 
@@ -300,9 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5c9a541a31fc1459febd12df6bb0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 136440117}
   speed: 5
-  forwardforce: 2000
 --- !u!1 &161480215
 GameObject:
   m_ObjectHideFlags: 0
