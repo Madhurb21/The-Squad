@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 1385412163}
   - component: {fileID: 1385412162}
   m_Layer: 5
-  m_Name: Gameover
+  m_Name: Gamewon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -682,7 +682,7 @@ GameObject:
   - component: {fileID: 1556775533}
   - component: {fileID: 1556775532}
   m_Layer: 5
-  m_Name: GameoverText
+  m_Name: GamewonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,7 +704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: 77}
+  m_AnchoredPosition: {x: -7, y: 73}
   m_SizeDelta: {x: 257.2737, y: 68.574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556775532
@@ -729,7 +729,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5e0191f4ae95dcd43baaaede13f85c60, type: 3}
-    m_FontSize: 150
+    m_FontSize: 68
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -740,7 +740,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: GAME OVER
+  m_Text: " CONGRATULATIONS!!\n YOU HAVE WON THE GAME!!"
 --- !u!222 &1556775533
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -897,7 +897,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TRY AGAIN
+  m_Text: BACK
 --- !u!222 &2124171994
 CanvasRenderer:
   m_ObjectHideFlags: 0
