@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject bloodSplat;
     public int damageToZombie=20;
     public int maxHealth=100;
     public int currentHealth;
@@ -32,11 +33,29 @@ public class Enemy : MonoBehaviour
                 TakeDamage(damageToZombie);
                 //Destroy(other.gameObject);
             }
+            if(other.gameObject.tag == "Player")
+            {
+                killedByCar();
+            }
     }
 
     void TakeDamage(int damage){
         currentHealth-=damage;
 
         zombieHealth.SetHealth(currentHealth);
+    }
+    public void killedByCar()
+    {
+        currentHealth = 0;
+    }
+    private void Update() 
+    {
+        if(currentHealth <= 0)
+        {
+            FindObjectOfType<HealthRefill>().zombieKilled();
+            Instantiate(bloodSplat, transform.position, Quaternion.identity);
+            FindObjectOfType<SplatSound>().zombieKillSound();
+            Destroy(this.gameObject);
+        }
     }
 }

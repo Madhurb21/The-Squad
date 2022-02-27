@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
 public Rigidbody2D rb;
-float forwardforce = 200f;
+public float forwardforce = 200f;
 public float speed = 5f ;
 
 

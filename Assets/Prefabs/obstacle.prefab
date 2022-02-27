@@ -273,9 +273,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.3}
+  m_Offset: {x: 0, y: 0.62}
   serializedVersion: 2
-  m_Radius: 1.1
+  m_Radius: 1
 --- !u!114 &5697613603713868243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79634f7a014845bdabe7afa6c121750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodSplat: {fileID: 5152860601702000617, guid: 37d156d4efb1558489e4d24e0297ce5c, type: 3}
   damageToZombie: 20
   maxHealth: 100
   currentHealth: 0

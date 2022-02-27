@@ -30,7 +30,6 @@ public class Player : MonoBehaviour
             if(other.gameObject.tag == "Zombie"){
                 //Debug.Log("Hit");
                 TakeDamage(damageToCar);
-                Destroy(other.gameObject);
             }
     }
 
@@ -38,5 +37,16 @@ public class Player : MonoBehaviour
         currentHealth-=damage;
 
         healthBar.SetHealth(currentHealth);
+    }
+    public void Refill() 
+    {
+        healthBar.SetHealth(currentHealth);
+    }
+    private void Update()
+    {
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
     }
 }
