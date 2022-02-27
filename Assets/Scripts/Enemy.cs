@@ -54,6 +54,7 @@ public class Enemy : MonoBehaviour
         {
             FindObjectOfType<HealthRefill>().zombieKilled();
             Instantiate(bloodSplat, transform.position, Quaternion.identity);
+            Scorescript.scorezombie1 += 10;
             FindObjectOfType<SplatSound>().zombieKillSound();
             Destroy(this.gameObject);
         }

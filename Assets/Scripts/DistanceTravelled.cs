@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DistanceTravelled : MonoBehaviour
 {
     private int distance;
-    public float winDistance;
+    public float winDistance = 1000;
     private Transform playerTransform;
     public Text distanceText;
     void Start()
@@ -16,10 +16,10 @@ public class DistanceTravelled : MonoBehaviour
     void Update()
     {
         distance = (int)playerTransform.position.y;
-        distanceText.text = "Distance " + distance;
+        distanceText.text = "Distance: " + distance;
         if(distance >= winDistance)
         {
-            //GameWon
+            FindObjectOfType<sceneManager>().gameWon();
         }
     }
 
