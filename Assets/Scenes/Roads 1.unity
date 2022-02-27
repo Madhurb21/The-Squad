@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 136440118}
   - component: {fileID: 136440121}
   - component: {fileID: 136440122}
+  - component: {fileID: 136440123}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -172,7 +173,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136440116}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c24bde7eef335eb4db9e8e641094a224, type: 3}
   m_Name: 
@@ -287,6 +288,21 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 2008414557}
+--- !u!114 &136440123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136440116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d5c9a541a31fc1459febd12df6bb0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
+  forwardforce: 2000
 --- !u!1 &161480215
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gun: {fileID: 1266378099}
-  offset: {x: 0, y: 0, z: -2}
+  offset: {x: 0, y: 5, z: -2}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
