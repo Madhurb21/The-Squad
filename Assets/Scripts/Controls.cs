@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Controls : MonoBehaviour
 {
-    public void Escape()
+    public void Control()
     {
         SceneManager.LoadScene("Final3");
     }
