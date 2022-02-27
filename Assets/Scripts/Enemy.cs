@@ -46,7 +46,9 @@ public class Enemy : MonoBehaviour
     }
     public void killedByCar()
     {
-        currentHealth = 0;
+        Instantiate(bloodSplat, transform.position, Quaternion.identity);
+        FindObjectOfType<SplatSound>().zombieKillSound();
+        Destroy(this.gameObject);
     }
     private void Update() 
     {
