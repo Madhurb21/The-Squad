@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
+        Scorescript.scorezombie1 = 0;
         SceneManager.LoadScene("Controls");
     }
 

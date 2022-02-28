@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        if(currentHealth == 0)
+        if(currentHealth <= 0)
         {
             FindObjectOfType<sceneManager>().gameLost();
         }
